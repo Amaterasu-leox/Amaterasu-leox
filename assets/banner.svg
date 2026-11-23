@@ -14,9 +14,9 @@
       <stop offset="50%" stop-color="#ffb703"/>
       <stop offset="100%" stop-color="#00e5ff"/>
     </linearGradient>
-    <linearGradient id="sunGrad" x1="710" y1="45" x2="710" y2="165" gradientUnits="userSpaceOnUse">
+    <linearGradient id="sunGrad" x1="710" y1="70" x2="710" y2="165" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#ffbe0b"/>
-      <stop offset="55%" stop-color="#fb5607"/>
+      <stop offset="52%" stop-color="#fb5607"/>
       <stop offset="100%" stop-color="#ff006e"/>
     </linearGradient>
     <linearGradient id="borderGrad" x1="0" y1="0" x2="900" y2="240" gradientUnits="userSpaceOnUse">
@@ -28,7 +28,7 @@
       <rect width="900" height="1.5" fill="#000000" opacity="0.28"/>
     </pattern>
     <clipPath id="sunClip">
-      <circle cx="710" cy="165" r="78"/>
+      <circle cx="710" cy="165" r="90"/>
     </clipPath>
     <clipPath id="bannerClip">
       <rect x="2" y="2" width="896" height="236" rx="6"/>
@@ -40,14 +40,15 @@
     <rect x="0" y="0" width="900" height="165" fill="url(#skySynth)"/>
     <rect x="0" y="165" width="900" height="75" fill="url(#groundSynth)"/>
 
-    <!-- Soleil synthwave rayé à droite -->
+    <!-- Soleil synthwave rayé à droite (#ffbe0b -> #fb5607 -> #ff006e) -->
     <g clip-path="url(#sunClip)">
-      <rect x="625" y="80" width="170" height="90" fill="url(#sunGrad)"/>
-      <rect x="625" y="114" width="170" height="3" fill="#180d33"/>
-      <rect x="625" y="123" width="170" height="4" fill="#180d33"/>
-      <rect x="625" y="133" width="170" height="5" fill="#180d33"/>
-      <rect x="625" y="144" width="170" height="6" fill="#180d33"/>
-      <rect x="625" y="156" width="170" height="7" fill="#180d33"/>
+      <rect x="615" y="70" width="190" height="96" fill="url(#sunGrad)"/>
+      <rect x="615" y="108" width="190" height="2.5" fill="#120824"/>
+      <rect x="615" y="116" width="190" height="3.5" fill="#120824"/>
+      <rect x="615" y="125" width="190" height="4.5" fill="#120824"/>
+      <rect x="615" y="135" width="190" height="5.5" fill="#120824"/>
+      <rect x="615" y="146" width="190" height="7" fill="#120824"/>
+      <rect x="615" y="158" width="190" height="8" fill="#120824"/>
     </g>
 
     <!-- Ligne d'horizon -->
