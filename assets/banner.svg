@@ -12,18 +12,29 @@
     <linearGradient id="titleGrad" x1="40" y1="40" x2="540" y2="105" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#ff4d8d"/>
       <stop offset="50%" stop-color="#ffb703"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
     </linearGradient>
     <linearGradient id="sunGrad" x1="710" y1="70" x2="710" y2="165" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#ffbe0b"/>
       <stop offset="52%" stop-color="#fb5607"/>
       <stop offset="100%" stop-color="#ff006e"/>
     </linearGradient>
+    <linearGradient id="gridCyanTurquoise" x1="0" y1="165" x2="900" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="100%" stop-color="#00bbf9"/>
+    </linearGradient>
     <linearGradient id="borderGrad" x1="0" y1="0" x2="900" y2="240" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#ff4d8d"/>
       <stop offset="50%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00f5d4"/>
     </linearGradient>
+    <filter id="gridGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     <pattern id="scanlines" width="900" height="4" patternUnits="userSpaceOnUse">
       <rect width="900" height="1.5" fill="#000000" opacity="0.28"/>
     </pattern>
@@ -52,10 +63,10 @@
     </g>
 
     <!-- Ligne d'horizon -->
-    <line x1="0" y1="165" x2="900" y2="165" stroke="#00e5ff" stroke-width="1.5" opacity="0.85"/>
+    <line x1="0" y1="165" x2="900" y2="165" stroke="#00f5d4" stroke-width="1.5" opacity="0.85" filter="url(#gridGlow)"/>
 
-    <!-- Grille en perspective -->
-    <g stroke="#00e5ff" stroke-width="1" opacity="0.45">
+    <!-- Grille en perspective (#00f5d4 / #00bbf9) avec lueur discrète -->
+    <g stroke="url(#gridCyanTurquoise)" stroke-width="1.1" opacity="0.62" filter="url(#gridGlow)">
       <line x1="0" y1="173" x2="900" y2="173"/>
       <line x1="0" y1="184" x2="900" y2="184"/>
       <line x1="0" y1="199" x2="900" y2="199"/>
@@ -77,12 +88,12 @@
     <text x="42" y="86" font-family="'Segoe UI', 'Arial Black', Ubuntu, sans-serif" font-size="44" font-weight="900" letter-spacing="2" fill="url(#titleGrad)">LÉO BASKARANE</text>
 
     <!-- Sous-titres style rétro -->
-    <text x="42" y="118" font-family="'Consolas', 'Courier New', monospace" font-size="14" font-weight="700" letter-spacing="2" fill="#00e5ff">FULL-STACK DEV  •  CRÉATEUR WEB</text>
-    <text x="42" y="141" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="600" letter-spacing="1.5" fill="#ffb703">PYTHON  •  FASTAPI  •  HTML/CSS/JS  •  MYSQL</text>
+    <text x="42" y="118" font-family="'Consolas', 'Courier New', monospace" font-size="14" font-weight="700" letter-spacing="2" fill="#00f5d4">DÉVELOPPEUR FULL-STACK &amp; CRÉATEUR WEB</text>
+    <text x="42" y="141" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="600" letter-spacing="1.5" fill="#00bbf9">PYTHON  •  FASTAPI  •  HTML/CSS/JS  •  MYSQL</text>
 
-    <!-- Encadré bas gauche -->
-    <rect x="42" y="182" width="232" height="32" rx="3" fill="#0b091a" fill-opacity="0.88" stroke="#ff4d8d" stroke-width="1.5"/>
-    <text x="158" y="203" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="1.5" fill="#f8fafc">AMATERASU-LEOX</text>
+    <!-- Petit badge encadré en bas à gauche -->
+    <rect x="42" y="182" width="290" height="32" rx="3" fill="#080716" fill-opacity="0.9" stroke="#00f5d4" stroke-width="1.5"/>
+    <text x="187" y="203" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11.5" font-weight="700" letter-spacing="1.2" fill="#f8fafc">FULL-STACK • PYTHON &amp; FASTAPI</text>
   </g>
 
   <!-- Bordure extérieure dégradée -->
