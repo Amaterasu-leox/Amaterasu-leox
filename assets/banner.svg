@@ -1,0 +1,45 @@
+<svg width="900" height="230" viewBox="0 0 900 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgCyber" x1="0" y1="0" x2="900" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="55%" stop-color="#0d1526"/>
+      <stop offset="100%" stop-color="#0a1f24"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <pattern id="diagGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 24 M 0 0 L 24 24" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="230" rx="10" fill="url(#bgCyber)"/>
+  <rect width="900" height="230" rx="10" fill="url(#diagGrid)"/>
+  <rect x="1" y="1" width="898" height="228" rx="9" stroke="#1e3a5f" stroke-width="2"/>
+  <path d="M 1 10 Q 1 1 10 1 L 890 1 Q 899 1 899 10 L 899 32 L 1 32 Z" fill="#0f172a"/>
+  <line x1="1" y1="32" x2="899" y2="32" stroke="#1e3a5f" stroke-width="1"/>
+  <circle cx="20" cy="16.5" r="5" fill="#ef4444"/>
+  <circle cx="38" cy="16.5" r="5" fill="#f59e0b"/>
+  <circle cx="56" cy="16.5" r="5" fill="#10b981"/>
+  <text x="450" y="21" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11" fill="#64748b">amaterasu-leox@github:~/profile — zsh</text>
+  <rect x="34" y="54" width="6" height="44" rx="3" fill="url(#accentCyan)"/>
+  <text x="52" y="88" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="36" font-weight="800" letter-spacing="1.5" fill="#f8fafc">Léo Baskarane</text>
+  <text x="34" y="122" font-family="'Consolas', 'Courier New', monospace" font-size="14" font-weight="700" fill="#00f0ff">&gt; Développeur Full-Stack &amp; Créateur Web</text>
+  <text x="34" y="145" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="13" fill="#94a3b8">Conception d'applications web modernes, d'APIs REST et d'outils sur mesure.</text>
+  <rect x="34" y="168" width="84" height="26" rx="13" fill="#0f293a" stroke="#00f0ff" stroke-width="1.2"/>
+  <text x="76" y="185" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#00f0ff">Python</text>
+  <rect x="126" y="168" width="90" height="26" rx="13" fill="#0d2e26" stroke="#10b981" stroke-width="1.2"/>
+  <text x="171" y="185" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#10b981">FastAPI</text>
+  <rect x="224" y="168" width="106" height="26" rx="13" fill="#172554" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="277" y="185" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#60a5fa">HTML/CSS/JS</text>
+  <rect x="338" y="168" width="76" height="26" rx="13" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2"/>
+  <text x="376" y="185" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-size="11" font-weight="700" fill="#a5b4fc">MySQL</text>
+  <rect x="555" y="48" width="312" height="162" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="572" y="72" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#64748b">1  {</text>
+  <text x="572" y="92" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#38bdf8">2    "pseudo"<tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"Amaterasu-leox"</tspan><tspan fill="#94a3b8">,</tspan></text>
+  <text x="572" y="112" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#38bdf8">3    "role"<tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"Full-Stack Dev"</tspan><tspan fill="#94a3b8">,</tspan></text>
+  <text x="572" y="132" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#38bdf8">4    "os"<tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"Windows + WSL Ubuntu"</tspan><tspan fill="#94a3b8">,</tspan></text>
+  <text x="572" y="152" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#38bdf8">5    "workflow"<tspan fill="#94a3b8">: </tspan><tspan fill="#fbbf24">"Git &amp; CI/CD"</tspan><tspan fill="#94a3b8">,</tspan></text>
+  <text x="572" y="172" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#38bdf8">6    "status"<tspan fill="#94a3b8">: </tspan><tspan fill="#a78bfa">"Building..."</tspan></text>
+  <text x="572" y="192" font-family="'Consolas', 'Courier New', monospace" font-size="12" fill="#64748b">7  }</text>
+</svg>
